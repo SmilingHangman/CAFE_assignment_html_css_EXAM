@@ -43,7 +43,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            title: 'Mano Title',
+            title: 'Cuda',
             filename: 'index.html',
             template: 'src/index.html'
         }),

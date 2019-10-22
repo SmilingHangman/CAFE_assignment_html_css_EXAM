@@ -1,0 +1,26 @@
+.get-in-touch-section {
+    background-color: #3C5399;
+    padding-top: 117px;
+    padding-bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 42px;
+        color: #ffffff;
+        padding-bottom: 21px;
+        letter-spacing: 4px;
+    }
+    .divider {
+        width: 87px;
+        border: 2px solid #273971;
+    }
+    h3 {
+        font-size: 20px;
+        color: #ffffff;
+        padding-top: 22px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+}

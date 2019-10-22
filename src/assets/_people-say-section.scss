@@ -1,0 +1,27 @@
+.what-people-say {
+        background-color: #D74580;
+        padding-top: 116px;
+        padding-bottom: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    h2 {
+        font-size: 42px;
+        color: #ffffff;
+        padding-bottom: 21px;
+        letter-spacing: 4px;
+    }
+    .divider {
+        width: 87px;
+        border: 2px solid #B73B6D;
+    }
+    h3 {
+        font-size: 20px;
+        color: #ffffff;
+        padding-top: 22px;
+        max-width: 710px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+}

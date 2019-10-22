@@ -1,9 +1,8 @@
 import './assets/style.scss';
-// import image from './assets/bnb.png';
-// const section = document.createElement('div');
-// document.body.appendChild(section);
-
-// const img = new Image();
-// img.src = image;
-// document.body.appendChild(img);
-
+import './assets/images/logo.png';
+import './assets/images/flag_icon.png';
+import './assets/images/crayon_icon.png';
+import './assets/images/gears_icon.png';
+import './assets/images/rocket_icon.png';
+import './assets/images/contacts_3.png';
+import './assets/images/contacts_4.png';

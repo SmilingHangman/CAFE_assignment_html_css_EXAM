@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    background-color: #864F9C;
+    align-items: center;
+    padding: 57px 0 40px 0;
+    position: fixed;
+    img {
+        height: 37px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            color: #ffffff;
+            font-size: 13px;
+        }
+    }
+}
