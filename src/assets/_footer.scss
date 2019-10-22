@@ -3,6 +3,18 @@ footer {
     height: 113px;
     color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    a {
+        margin: 0 43px;
+        transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        &:hover {
+            cursor: pointer;
+            color: #30BAE7;
+        }
+    }
 }
