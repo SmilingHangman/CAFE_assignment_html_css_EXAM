@@ -28,6 +28,8 @@
         display: flex;
         color: #ffffff;
         margin-top: 122px;
+        flex-wrap: wrap;
+        justify-content: center;
         .service-type {
             display: flex;
             flex-direction: column;

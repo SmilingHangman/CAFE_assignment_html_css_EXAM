@@ -27,6 +27,8 @@
     .team-display {
         margin-top: 79px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         .team-member {
             display: flex;
             flex-direction: column;
@@ -60,6 +62,13 @@
                 height: 150px;
                 letter-spacing: 1px;
                 line-height: 1.4;
+            }
+            .team-member-media-links {
+                display: flex;
+                justify-content: center;
+                img {
+                    margin: 0 6px;
+                }
             }
         }
     }

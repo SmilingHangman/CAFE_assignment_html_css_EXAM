@@ -11,19 +11,19 @@
         <img src="logo.png" alt="">
         <nav>
             <ul>
-                <li><a>HOME</a></li>
-                <li><a>ABOUT</a></li>
-                <li><a>WORK</a></li>
-                <li><a>BLOG</a></li>
-                <li><a>CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <div class="title-section">
+    <div class="title-section" id="home">
         <h1>Hi there! We are the new kids on the block <br> and we build awesome websites and mobile apps.</h1>
         <button>WORK WITH US!</button>
     </div>
-    <div class="services-section">
+    <div class="services-section" id="about">
         <h2>SERVICES WE PROVIDE</h2>
         <div class="divider"></div>
         <h3>We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</h3>
@@ -60,32 +60,50 @@
                 <h4>ANNE HATHAWAY</h4>
                 <h5>CEO / Marketing Guru</h5>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-                <img src="contacts_4.png" alt="">
+                <div class="team-member-media-links">
+                    <img src="fb_icon.png" alt="">
+                    <img src="twitter_icon.png" alt="">
+                    <img src="linkedIn_icon.png" alt="">
+                    <img src="mail_icon.png" alt="">
+                </div>                
             </div>
             <div class="team-member">
                 <div class="photo"></div>
                 <h4>KATE UPTON</h4>
                 <h5>Creative Director</h5>
                 <p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
-                <img src="contacts_3.png" alt="">
+                <div class="team-member-media-links">
+                    <img src="twitter_icon.png" alt="">
+                    <img src="linkedIn_icon.png" alt="">
+                    <img src="mail_icon.png" alt="">
+                </div> 
             </div>
             <div class="team-member">
                 <div class="photo"></div>
                 <h4>OLIVIA WILDE</h4>
                 <h5>Lead Designer</h5>
                 <p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
-                <img src="contacts_4.png" alt="">
+                <div class="team-member-media-links">
+                    <img src="fb_icon.png" alt="">
+                    <img src="twitter_icon.png" alt="">
+                    <img src="linkedIn_icon.png" alt="">
+                    <img src="mail_icon.png" alt="">
+                </div>
             </div>
             <div class="team-member">
                 <div class="photo"></div>
                 <h4>ASHLEY GREENE</h4>
                 <h5>SEO / Developer</h5>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                <img src="contacts_3.png" alt="">
+                <div class="team-member-media-links">
+                    <img src="twitter_icon.png" alt="">
+                    <img src="linkedIn_icon.png" alt="">
+                    <img src="mail_icon.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <div class="skills-section">
+    <div class="skills-section" id="work">
         <h2>WE GOT SKILLS!</h2>
         <div class="divider"></div>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
@@ -176,7 +194,7 @@
         </div>
         <button>LOAD MORE PROJECTS</button>
     </div>
-    <div class="what-people-say">
+    <div class="what-people-say" id="blog">
         <h2>WHAT POEPLE SAY ABOUT US</h2>
         <div class="divider"></div>
         <h3>Our clients love us!</h3>
@@ -215,7 +233,7 @@
             </div>
         </div>
     </div>
-    <div class="get-in-touch-section">
+    <div class="get-in-touch-section" id="contact">
         <h2>GET IN TOUCH</h2>
         <div class="divider"></div>
         <h3>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h3>
@@ -239,5 +257,11 @@
         <a>Dribbble</a>
         <a>GitHub</a>
     </footer>
+
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
 <script type="text/javascript" src="app.js"></script></body>
 </html>
