@@ -63,9 +63,15 @@
             width: 100%;
             max-width: 860px;
             box-sizing: border-box;
+            &::-webkit-resizer {
+                color: #273971;
+            }
         }
+        // textarea::placeholder::after {
+        //     content: "*";
+        //     font-family: "Cabin";
+        //     font-size: 20px;
+        //     color: red;
+        // }
     }
-}
-::-webkit-resizer {
-    color: #273971;
 }
