@@ -23,5 +23,50 @@
         text-align: center;
         letter-spacing: 1px;
         line-height: 1.4;
+        margin-bottom: 70px;
+    }
+    .comment-card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1080px;
+    }
+    .comment-card {
+        display: flex;
+        margin-bottom: 146px;
+        width: 490px;
+        .comment-pic {
+            width: 96px;
+            height: 96px;
+            background-color: #777777;
+            border-radius: 50%;
+        }
+        .comment-text-block {
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+            padding-left: 48px;
+            p {
+                letter-spacing: 1px;
+                line-height: 1.4;
+                max-width: 344px;
+                margin-bottom: 2px;
+                padding-top: 13px;
+                font-size: 21px;
+                min-height: 118px;
+            }
+            h4 {
+                font-size: 19px;
+                letter-spacing: 1px;
+                font-weight: 500;
+                font-size: 25px;
+            }
+            h5 {
+                letter-spacing: 1px;
+                line-height: 1.4;
+                color: #FFDD99;
+                font-size: 19px;
+            }
+        }
     }
 }
