@@ -10,3 +10,7 @@ import './assets/images/portfolio_01.png';
 import './assets/images/portfolio_02.png';
 import './assets/images/portfolio_03.png';
 import './assets/images/portfolio_04.png';
+import './assets/images/fb_icon.png';
+import './assets/images/linkedIn_icon.png';
+import './assets/images/mail_icon.png';
+import './assets/images/twitter_icon.png';
