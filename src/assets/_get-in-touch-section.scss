@@ -19,13 +19,14 @@
     h3 {
         font-size: 20px;
         color: #ffffff;
-        padding-top: 22px;
+        padding: 22px 16px 0 16px;
         text-align: center;
         letter-spacing: 1px;
         line-height: 1.4;
     }
     form {
         margin-top: 58px;
+        padding: 0 16px;
         width: 100%;
         .field-workaround {
             display: flex;
@@ -44,10 +45,12 @@
                 border: none;
                 border-radius: 5px;
                 padding: 17px 25px;
-                margin: 0 16px;
                 width: 100%;
                 max-width: 414px;
                 box-sizing: border-box;
+                &:nth-of-type(2) {
+                    margin-left: 32px;
+                }
             }
         }
         textarea {
@@ -81,6 +84,28 @@
             color: #ffffff;
             &:hover {
                 cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    .get-in-touch-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        form {
+            .name-email {
+                flex-direction: column;
+                align-items: center;
+                input {
+                    max-width: 100%;
+                    &:nth-of-type(2) {
+                        margin-left: 0;
+                        margin-top: 27px;
+                    }
+                }
+            }
+            textarea {
+                margin-bottom: 16px;
             }
         }
     }
