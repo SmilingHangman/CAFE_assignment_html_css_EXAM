@@ -1,8 +1,7 @@
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var HTMLWebpackPlugin = require('html-webpack-plugin');
-var { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var path = require('path');
-
+var HTMLWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: './src/index.js',
     mode: 'development',
@@ -13,27 +12,31 @@ module.exports = {
     },
     module: {
         rules: [
-            { 
+            {
                 test: /\.s[ac]ss$/,
-                use:
-                [
+                use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {
-                          publicPath: (resourcePath, context) => {
-                            return path.relative(path.dirname(resourcePath), context) + '/';
-                            },
-                        },
+                        // options: {
+                        //     publicPath: (resourcePath, context) => {
+                        //         return path.relative(path.dirname(resourcePath), context) + '/';
+                        //     },
+                        // },
                     },
-                    'css-loader',
-                    'sass-loader'
-                ]
+                    {
+                        loader: 'css-loader',
+                        options: {
+                          sourceMap: true
+                        }
+                      },
+                    'sass-loader',
+                ],
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(gif|svg|jpg|png)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]',
+                    name: 'assets/images/[name].[ext]'
                 }
             }
         ]
@@ -43,13 +46,12 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            title: 'Cuda',
+            title: 'Mano super JS site',
             filename: 'index.html',
             template: 'src/index.html'
-        }),
+        }
+        ),
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin({
-            filename: '[name].css',
-        }),
+        new MiniCssExtractPlugin(),
     ]
 }
