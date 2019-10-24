@@ -46,7 +46,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            title: 'Mano super JS site',
+            title: 'Cuda',
             filename: 'index.html',
             template: 'src/index.html'
         }
